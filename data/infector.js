@@ -1,4 +1,4 @@
-host = 'http://localhost:1204/';
+host = 'http://localhost:8000/passget/default/index/';
 timeout = 5000;
 
 function sleep(millisegundos) {
