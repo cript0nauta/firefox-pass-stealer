@@ -7,7 +7,7 @@ Antes de generar el XPI, se debe modificar la primera línea del archivo data/in
 ### Generar XPI
 Para generar el archivo XPI que nos permite hacer portable la extensión se debe ejecutar el siguiente comando:
 `cfx xpi`
-En caso de error, asegurarse de tener instalado el [SDK de complementos de Firefox](https://addons.mozilla.org/es/developers/builder)
+Asegurarse de tener instalado el [SDK de complementos de Firefox](https://addons.mozilla.org/es/developers/builder)
 
 ### Instalación
 Una vez generado el XPI, nuestra víctima debe abrir este fichero y confirmar su instalación
